@@ -11,6 +11,7 @@ struct FormView: View {
     
     @State var personFullName: String = ""
     @State var personDayOfBirth: String = ""
+    @State private var isOn = false
     
     var body: some View {
         
@@ -25,6 +26,14 @@ struct FormView: View {
             .textFieldStyle(.roundedBorder)
             .padding(.all, 10.0)
             
+            Toggle(isOn: $isOn) {
+                    Text("Accept terms.")
+            }
+            .toggleStyle(CheckboxToggleStyle())
+            .padding()
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
+                   alignment: .leading)
+            
             NavigationLink("Create") {
                 UserDataView(personFullName: personFullName,
                              personDayOfBirth: personDayOfBirth)
@@ -38,6 +47,21 @@ struct FormView: View {
         .navigationTitle("Form")
         .padding()
         
+    }
+}
+
+struct CheckboxToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button(action: {
+            configuration.isOn.toggle()
+        }, label: {
+            HStack {
+                Image(systemName: configuration.isOn ? "checkmark.square" : "square").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                configuration.label
+                
+            }
+            .foregroundColor(.black)
+        })
     }
 }
 
