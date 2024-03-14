@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hi")
+                .font(.largeTitle)
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+            
+            Text("new user!")
+            
+            NavigationLink("Let's start") {
+                FormView()
+            }
+            .buttonStyle(.borderedProminent)
+            .padding()
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            ContentView()
+        }
+    }
 }

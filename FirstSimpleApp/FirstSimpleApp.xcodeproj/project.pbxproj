@@ -11,6 +11,8 @@
 		167A71DF2BA341D100034EFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A71DE2BA341D100034EFD /* ContentView.swift */; };
 		167A71E12BA341D300034EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167A71E02BA341D300034EFD /* Assets.xcassets */; };
 		167A71E42BA341D300034EFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167A71E32BA341D300034EFD /* Preview Assets.xcassets */; };
+		167A71EB2BA3434D00034EFD /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A71EA2BA3434D00034EFD /* FormView.swift */; };
+		167A71ED2BA3437D00034EFD /* UserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A71EC2BA3437D00034EFD /* UserDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		167A71DE2BA341D100034EFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		167A71E02BA341D300034EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167A71E32BA341D300034EFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		167A71EA2BA3434D00034EFD /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		167A71EC2BA3437D00034EFD /* UserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				167A71DE2BA341D100034EFD /* ContentView.swift */,
 				167A71E02BA341D300034EFD /* Assets.xcassets */,
 				167A71E22BA341D300034EFD /* Preview Content */,
+				167A71EA2BA3434D00034EFD /* FormView.swift */,
+				167A71EC2BA3437D00034EFD /* UserDataView.swift */,
 			);
 			path = FirstSimpleApp;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167A71EB2BA3434D00034EFD /* FormView.swift in Sources */,
+				167A71ED2BA3437D00034EFD /* UserDataView.swift in Sources */,
 				167A71DF2BA341D100034EFD /* ContentView.swift in Sources */,
 				167A71DD2BA341D100034EFD /* FirstSimpleAppApp.swift in Sources */,
 			);
